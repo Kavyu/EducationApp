@@ -2,6 +2,9 @@ html, body {
     overflow-x: hidden;
 }
 
+#letter-t{
+  color: red;
+}
 .carousel-item {
     background-image: url(resources/learning.jpg);
     height: 65vh;
