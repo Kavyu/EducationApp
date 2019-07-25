@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     overflow-x: hidden;
 }
 
@@ -13,7 +14,11 @@ html, body {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-      margin: 0px;
+    background-size: cover;
+}
+
+.carousel-right {
+     margin: 0px;
   padding: 150px 0px 100px 15px;
 }
   .carousel-right {
@@ -25,6 +30,47 @@ html, body {
     padding-bottom: 20px;
     color: #fff;
     text-align: left;
+}
+
+.nav-link {
+    color: #000;
+    font-weight: 700;
+}
+
+.nav-link:hover {
+    color: red;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #000;
+    border-radius: 0%;
+    background-color: #fff;
+    border-bottom: 5px solid red;
+}
+
+.item-list-title {
+    position: block;
+    font-weight: 700;
+    margin-left: 5%;
+}
+
+.card-body {
+    background-color: rgba(242, 242, 242, 1);
+    padding-bottom: 2px;
+}
+
+.checked {
+    color: orange;
+}
+
+#sticky-footer {
+    flex-shrink: none;
+  }
+
+  .tab-content {
+      margin-left: 4%
+  }
     font-weight: bold;
     background-size: cover;
     font-size: 54px !important;
@@ -37,3 +83,4 @@ html, body {
      margin: 0;
     padding: 10px 20px 10px 20px;
   }
+
