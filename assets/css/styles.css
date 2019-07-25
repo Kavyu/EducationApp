@@ -3,7 +3,11 @@ body {
     overflow-x: hidden;
 }
 
+#letter-t{
+  color: red;
+}
 .carousel-item {
+    background-image: url(resources/learning.jpg);
     height: 65vh;
     min-height: 350px;
     background: no-repeat center center scroll;
@@ -14,6 +18,10 @@ body {
 }
 
 .carousel-right {
+     margin: 0px;
+  padding: 150px 0px 100px 15px;
+}
+  .carousel-right {
     position: absolute;
     top: 47%;
     left: 5%;
@@ -22,10 +30,6 @@ body {
     padding-bottom: 20px;
     color: #fff;
     text-align: left;
-}
-
-.pink-strip {
-    background-color: #ff00bf;
 }
 
 .nav-link {
@@ -67,3 +71,16 @@ body {
   .tab-content {
       margin-left: 4%
   }
+    font-weight: bold;
+    background-size: cover;
+    font-size: 54px !important;
+  }
+  
+  .pink-strip {
+      background-color: #ff00bf;
+      color: white;
+     line-height: 0;
+     margin: 0;
+    padding: 10px 20px 10px 20px;
+  }
+
