@@ -3,23 +3,15 @@ html, body {
 }
 
 .carousel-item {
+    background-image: url(resources/learning.jpg);
     height: 65vh;
     min-height: 350px;
     background: no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
-  }
-.carousel-item image{
-  background-image: url(resources/learning.jpg);
-  margin: 0px;
-  color: white;
-  font-weight: bold;
+      margin: 0px;
   padding: 150px 0px 100px 15px;
-  font-weight: bold;
-  background-size: cover;
-  font-size: 54px !important;
 }
   .carousel-right {
     position: absolute;
@@ -30,6 +22,9 @@ html, body {
     padding-bottom: 20px;
     color: #fff;
     text-align: left;
+    font-weight: bold;
+    background-size: cover;
+    font-size: 54px !important;
   }
   
   .pink-strip {
