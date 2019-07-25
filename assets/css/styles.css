@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     overflow-x: hidden;
 }
 
@@ -10,9 +11,9 @@ html, body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-  }
+}
 
-  .carousel-right {
+.carousel-right {
     position: absolute;
     top: 47%;
     left: 5%;
@@ -21,8 +22,48 @@ html, body {
     padding-bottom: 20px;
     color: #fff;
     text-align: left;
+}
+
+.pink-strip {
+    background-color: #ff00bf;
+}
+
+.nav-link {
+    color: #000;
+    font-weight: 700;
+}
+
+.nav-link:hover {
+    color: red;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #000;
+    border-radius: 0%;
+    background-color: #fff;
+    border-bottom: 5px solid red;
+}
+
+.item-list-title {
+    position: block;
+    font-weight: 700;
+    margin-left: 5%;
+}
+
+.card-body {
+    background-color: rgba(242, 242, 242, 1);
+    padding-bottom: 2px;
+}
+
+.checked {
+    color: orange;
+}
+
+#sticky-footer {
+    flex-shrink: none;
   }
-  
-  .pink-strip {
-      background-color: #ff00bf;
+
+  .tab-content {
+      margin-left: 4%
   }
