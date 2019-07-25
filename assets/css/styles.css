@@ -1,0 +1,28 @@
+html, body {
+    overflow-x: hidden;
+}
+
+.carousel-item {
+    height: 65vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .carousel-right {
+    position: absolute;
+    top: 47%;
+    left: 5%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: left;
+  }
+  
+  .pink-strip {
+      background-color: #ff00bf;
+  }
