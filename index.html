@@ -12,6 +12,7 @@
 </head>
 
 <body>
+   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
         <i class="fab fa-airbnb text-danger"></i>&nbsp;
         <a class="navbar-brand" href="#"><span id="letter-t">t</span>utomalix 
@@ -48,8 +49,45 @@
             </div>
         </div>
     </nav>
+<!-- Sign up form -->
+    <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h4 class="modal-title w-100 font-weight-bold">Sign Up and Start Learning</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body mx-3">
+            <div class="md-form mb-5">
+              <label data-error="wrong" data-success="right" for="orangeForm-name"><i class="fas fa-user prefix grey-text"></i>Name</label>
+              <input type="text" id="orangeForm-name" class="form-control validate" placeholder="Enter Your Full Name" required="">
+              
+            </div>
+            <div class="md-form mb-5">
+              <label data-error="wrong" data-success="right" for="orangeForm-email"><i class="fas fa-envelope prefix grey-text"></i>Email</label>
+              <input type="email" id="orangeForm-email" class="form-control validate" placeholder="Enter Your Email" required="">
+              
+            </div>
 
-    <header>
+            <div class="md-form mb-4">
+              <label data-error="wrong" data-success="right" for="orangeForm-pass"><i class="fas fa-lock prefix grey-text"></i>Password</label>
+              <input type="password" id="orangeForm-pass" class="form-control validate" placeholder="Enter Your Password" required minlength="5">
+              
+            </div>
+
+          </div>
+          <div class="modal-footer d-fex justify-content-center">
+            <button class="btn btn-danger" type="submit">Sign up</button>
+                <h6>Already have an account?<a href="#">Log In</a></h6>
+          </div>
+        </div>
+      </div>
+</div>
+    </header>
+    <!-- Main section -->
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
                 <!-- Sets the background image for this slide in the line below -->
@@ -60,7 +98,7 @@
                     </div>
                 </div>
             </div>
-    </header>
+	</div>
 
     <!-- Page Content -->
     <section id="pink-strip">
@@ -97,15 +135,15 @@
             <ul class="nav nav-pills nav-fill" id="myTab" role="tablist">
                 <li class="nav-item">
                     <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
-                        aria-controls="home" aria-selected="true">Home</a>
+                        aria-controls="home" aria-selected="true">Coding</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
-                        aria-controls="profile" aria-selected="false">Profile</a>
+                    <a class="nav-link" id="gaming-tab" data-toggle="tab" href="#gaming" role="tab"
+                        aria-controls="gaming" aria-selected="false">Gaming</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
-                        aria-controls="contact" aria-selected="false">Contact</a>
+                    <a class="nav-link" id="3D-tab" data-toggle="tab" href="#3D" role="tab"
+                        aria-controls="3D" aria-selected="false">3D</a>
                 </li>
             </ul>
         </div>
@@ -113,12 +151,13 @@
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                 <div class="row">
                     <div class="col col-lg-4 d-flex align-items-center">
-                        <h5 class="display-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus culpa!
+                        <h5 class="display-5">The most popular selection of courses <p>
+				choose everything is free</p>
                         </h5>
                     </div>
                     <div class="col col-lg-2">
                         <div class="card" style="width: 200px;">
-                            <img class="card-img-top" src="https://picsum.photos/200" alt="Card image cap">
+                            <img class="card-img-top" src="resources/react_logo.png" alt="Card image cap">
                             <div class="card-body">
                                 <h6 class="card-text">The complete react class</h6>
                                 <p class="small text-capitalize">John Doe</p>
@@ -128,10 +167,10 @@
                                     <span class="fas fa-star checked"></span>
                                     <span class="fas fa-star checked"></span>
                                     <span class="fas fa-star"></span>
-                                    4.7 (1,500)
+                                    4.7 (1,452)
                                 </div>
                                 <div style="text-align:right">
-                                    <span class='small'>$100</span>
+                                    <span class='small'>$110</span>
                                     ($10)
                                 </div>
                             </div>
@@ -139,7 +178,7 @@
                     </div>
                     <div class="col col-lg-2">
                         <div class="card" style="width: 200px;">
-                            <img class="card-img-top" src="https://picsum.photos/200" alt="Card image cap">
+                            <img class="card-img-top" src="resources/python_icon.png" alt="Card image cap">
                             <div class="card-body">
                                 <h6 class="card-text">The complete react class</h6>
                                 <p class="small text-capitalize">John Doe</p>
@@ -149,10 +188,10 @@
                                     <span class="fas fa-star checked"></span>
                                     <span class="fas fa-star checked"></span>
                                     <span class="fas fa-star"></span>
-                                    4.7 (1,500)
+                                    4.7 (1,452)
                                 </div>
                                 <div style="text-align:right">
-                                    <span class='small'>$100</span>
+                                    <span class='small'>$110</span>
                                     ($10)
                                 </div>
                             </div>
@@ -160,7 +199,7 @@
                     </div>
                     <div class="col col-lg-2">
                         <div class="card" style="width: 200px;">
-                            <img class="card-img-top" src="https://picsum.photos/200" alt="Card image cap">
+                            <img class="card-img-top" src="resources/codeigniter.png" alt="Card image cap">
                             <div class="card-body">
                                 <h6 class="card-text">The complete react class</h6>
                                 <p class="small text-capitalize">John Doe</p>
@@ -170,10 +209,10 @@
                                     <span class="fas fa-star checked"></span>
                                     <span class="fas fa-star checked"></span>
                                     <span class="fas fa-star"></span>
-                                    4.7 (1,500)
+                                    4.7 (1,452)
                                 </div>
                                 <div style="text-align:right">
-                                    <span class='small'>$100</span>
+                                    <span class='small'>$110</span>
                                     ($10)
                                 </div>
                             </div>
@@ -182,7 +221,7 @@
 
                 </div>
             </div>
-            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="tab-pane fade" id="gaming" role="tabpanel" aria-labelledby="gaming-tab">
                 <div class="row">
                     <div class="col col-lg-4 d-flex align-items-center">
                         <h5 class="display-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus culpa!
@@ -190,7 +229,7 @@
                     </div>
                     <div class="col col-lg-2">
                         <div class="card" style="width: 200px;">
-                            <img class="card-img-top" src="https://picsum.photos/200" alt="Card image cap">
+                            <img class="card-img-top" src="resources/unity.png" alt="Card image cap">
                             <div class="card-body">
                                 <h6 class="card-text">The complete react class</h6>
                                 <p class="small text-capitalize">John Doe</p>
@@ -200,10 +239,10 @@
                                     <span class="fas fa-star checked"></span>
                                     <span class="fas fa-star checked"></span>
                                     <span class="fas fa-star"></span>
-                                    4.7 (1,500)
+                                    4.7 (1,452)
                                 </div>
                                 <div style="text-align:right">
-                                    <span class='small'>$100</span>
+                                    <span class='small'>$110</span>
                                     ($10)
                                 </div>
                             </div>
@@ -211,7 +250,7 @@
                     </div>
                     <div class="col col-lg-2">
                         <div class="card" style="width: 200px;">
-                            <img class="card-img-top" src="https://picsum.photos/200" alt="Card image cap">
+                            <img class="card-img-top" src="resources/unreal_engine.png" alt="Card image cap">
                             <div class="card-body">
                                 <h6 class="card-text">The complete react class</h6>
                                 <p class="small text-capitalize">John Doe</p>
@@ -221,10 +260,10 @@
                                     <span class="fas fa-star checked"></span>
                                     <span class="fas fa-star checked"></span>
                                     <span class="fas fa-star"></span>
-                                    4.7 (1,500)
+                                    4.7 (1,452)
                                 </div>
                                 <div style="text-align:right">
-                                    <span class='small'>$100</span>
+                                    <span class='small'>$110</span>
                                     ($10)
                                 </div>
                             </div>
@@ -232,7 +271,7 @@
                     </div>
                     <div class="col col-lg-2">
                         <div class="card" style="width: 200px;">
-                            <img class="card-img-top" src="https://picsum.photos/200" alt="Card image cap">
+                            <img class="card-img-top" src="resources/automaya.png" alt="Card image cap">
                             <div class="card-body">
                                 <h6 class="card-text">The complete react class</h6>
                                 <p class="small text-capitalize">John Doe</p>
@@ -242,10 +281,10 @@
                                     <span class="fas fa-star checked"></span>
                                     <span class="fas fa-star checked"></span>
                                     <span class="fas fa-star"></span>
-                                    4.7 (1,500)
+                                    4.7 (1,452)
                                 </div>
                                 <div style="text-align:right">
-                                    <span class='small'>$100</span>
+                                    <span class='small'>$110</span>
                                     ($10)
                                 </div>
                             </div>
@@ -254,7 +293,7 @@
 
                 </div>
             </div>
-            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+            <div class="tab-pane fade" id="3D" role="tabpanel" aria-labelledby="3D-tab">
                 <div class="row">
                     <div class="col col-lg-4 d-flex align-items-center">
                         <h5 class="display-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus culpa!
@@ -262,7 +301,7 @@
                     </div>
                     <div class="col col-lg-2">
                         <div class="card" style="width: 200px;">
-                            <img class="card-img-top" src="https://picsum.photos/200" alt="Card image cap">
+                            <img class="card-img-top" src="resources/maya.png" alt="Card image cap">
                             <div class="card-body">
                                 <h6 class="card-text">The complete react class</h6>
                                 <p class="small text-capitalize">John Doe</p>
@@ -272,10 +311,10 @@
                                     <span class="fas fa-star checked"></span>
                                     <span class="fas fa-star checked"></span>
                                     <span class="fas fa-star"></span>
-                                    4.7 (1,500)
+                                    4.7 (1,452)
                                 </div>
                                 <div style="text-align:right">
-                                    <span class='small'>$100</span>
+                                    <span class='small'>$110</span>
                                     ($10)
                                 </div>
                             </div>
@@ -283,7 +322,7 @@
                     </div>
                     <div class="col col-lg-2">
                         <div class="card" style="width: 200px;">
-                            <img class="card-img-top" src="https://picsum.photos/200" alt="Card image cap">
+                            <img class="card-img-top" src="resources/MAYA (3).png" alt="Card image cap">
                             <div class="card-body">
                                 <h6 class="card-text">The complete react class</h6>
                                 <p class="small text-capitalize">John Doe</p>
@@ -293,10 +332,10 @@
                                     <span class="fas fa-star checked"></span>
                                     <span class="fas fa-star checked"></span>
                                     <span class="fas fa-star"></span>
-                                    4.7 (1,500)
+                                    4.7 (1,452)
                                 </div>
                                 <div style="text-align:right">
-                                    <span class='small'>$100</span>
+                                    <span class='small'>$110</span>
                                     ($10)
                                 </div>
                             </div>
@@ -304,7 +343,7 @@
                     </div>
                     <div class="col col-lg-2">
                         <div class="card" style="width: 200px;">
-                            <img class="card-img-top" src="https://picsum.photos/200" alt="Card image cap">
+                            <img class="card-img-top" src="resources/c_sharp.jpg" alt="Card image cap">
                             <div class="card-body">
                                 <h6 class="card-text">The complete react class</h6>
                                 <p class="small text-capitalize">John Doe</p>
@@ -314,10 +353,10 @@
                                     <span class="fas fa-star checked"></span>
                                     <span class="fas fa-star checked"></span>
                                     <span class="fas fa-star"></span>
-                                    4.7 (1,500)
+                                    4.7 (1,452)
                                 </div>
                                 <div style="text-align:right">
-                                    <span class='small'>$100</span>
+                                    <span class='small'>$110</span>
                                     ($10)
                                 </div>
                             </div>
@@ -338,7 +377,7 @@
             <div class="row d-flex justify-content-around">
                 <div class="col col-lg-2">
                     <div class="card" style="width: 200px;">
-                        <img class="card-img-top" src="https://picsum.photos/200" alt="Card image cap">
+                        <img class="card-img-top" src="resources/react_logo.png" alt="Card image cap">
                         <div class="card-body">
                             <h6 class="card-text">The complete react class</h6>
                             <p class="small text-capitalize">John Doe</p>
@@ -351,7 +390,7 @@
                                 4.7 (1,500)
                             </div>
                             <div style="text-align:right">
-                                <span class='small'>$100</span>
+                                <span class='small'>$110</span>
                                 ($10)
                             </div>
                         </div>
@@ -359,7 +398,7 @@
                 </div>
                 <div class="col col-lg-2">
                     <div class="card" style="width: 200px;">
-                        <img class="card-img-top" src="https://picsum.photos/200" alt="Card image cap">
+                        <img class="card-img-top" src="resources/laravel_icon.png" alt="Card image cap">
                         <div class="card-body">
                             <h6 class="card-text">The complete react class</h6>
                             <p class="small text-capitalize">John Doe</p>
@@ -369,10 +408,10 @@
                                 <span class="fas fa-star checked"></span>
                                 <span class="fas fa-star checked"></span>
                                 <span class="fas fa-star"></span>
-                                4.7 (1,500)
+                                4.7 (1,452)
                             </div>
                             <div style="text-align:right">
-                                <span class='small'>$100</span>
+                                <span class='small'>$110</span>
                                 ($10)
                             </div>
                         </div>
@@ -380,7 +419,7 @@
                 </div>
                 <div class="col col-lg-2">
                     <div class="card" style="width: 200px;">
-                        <img class="card-img-top" src="https://picsum.photos/200" alt="Card image cap">
+                        <img class="card-img-top" src="resources/codeigniter.png" alt="Card image cap">
                         <div class="card-body">
                             <h6 class="card-text">The complete react class</h6>
                             <p class="small text-capitalize">John Doe</p>
@@ -390,10 +429,10 @@
                                 <span class="fas fa-star checked"></span>
                                 <span class="fas fa-star checked"></span>
                                 <span class="fas fa-star"></span>
-                                4.7 (1,500)
+                                4.7 (1,452)
                             </div>
                             <div style="text-align:right">
-                                <span class='small'>$100</span>
+                                <span class='small'>$110</span>
                                 ($10)
                             </div>
                         </div>
@@ -401,7 +440,7 @@
                 </div>
                 <div class="col col-lg-2">
                     <div class="card" style="width: 200px;">
-                        <img class="card-img-top" src="https://picsum.photos/200" alt="Card image cap">
+                        <img class="card-img-top" src="resources/cakephp.png" alt="Card image cap">
                         <div class="card-body">
                             <h6 class="card-text">The complete react class</h6>
                             <p class="small text-capitalize">John Doe</p>
@@ -411,10 +450,10 @@
                                 <span class="fas fa-star checked"></span>
                                 <span class="fas fa-star checked"></span>
                                 <span class="fas fa-star"></span>
-                                4.7 (1,500)
+                                4.7 (1,452)
                             </div>
                             <div style="text-align:right">
-                                <span class='small'>$100</span>
+                                <span class='small'>$110</span>
                                 ($10)
                             </div>
                         </div>
@@ -422,7 +461,7 @@
                 </div>
                 <div class="col col-lg-2">
                     <div class="card" style="width: 200px;">
-                        <img class="card-img-top" src="https://picsum.photos/200" alt="Card image cap">
+                        <img class="card-img-top" src="resources/flask.png" alt="Card image cap">
                         <div class="card-body">
                             <h6 class="card-text">The complete react class</h6>
                             <p class="small text-capitalize">John Doe</p>
@@ -432,10 +471,10 @@
                                 <span class="fas fa-star checked"></span>
                                 <span class="fas fa-star checked"></span>
                                 <span class="fas fa-star"></span>
-                                4.7 (1,500)
+                                4.7 (1,452)
                             </div>
                             <div style="text-align:right">
-                                <span class='small'>$100</span>
+                                <span class='small'>$110</span>
                                 ($10)
                             </div>
                         </div>
@@ -454,7 +493,7 @@
             <div class="row d-flex justify-content-around">
                 <div class="col col-lg-2">
                     <div class="card" style="width: 200px;">
-                        <img class="card-img-top" src="https://picsum.photos/200" alt="Card image cap">
+                        <img class="card-img-top" src="resources/unity.png" alt="Card image cap">
                         <div class="card-body">
                             <h6 class="card-text">The complete react class</h6>
                             <p class="small text-capitalize">John Doe</p>
@@ -464,10 +503,10 @@
                                 <span class="fas fa-star checked"></span>
                                 <span class="fas fa-star checked"></span>
                                 <span class="fas fa-star"></span>
-                                4.7 (1,500)
+                                4.7 (1,452)
                             </div>
                             <div style="text-align:right">
-                                <span class='small'>$100</span>
+                                <span class='small'>$110</span>
                                 ($10)
                             </div>
                         </div>
@@ -475,7 +514,7 @@
                 </div>
                 <div class="col col-lg-2">
                     <div class="card" style="width: 200px;">
-                        <img class="card-img-top" src="https://picsum.photos/200" alt="Card image cap">
+                        <img class="card-img-top" src="resources/unreal_engine.png" alt="Card image cap">
                         <div class="card-body">
                             <h6 class="card-text">The complete react class</h6>
                             <p class="small text-capitalize">John Doe</p>
@@ -485,10 +524,10 @@
                                 <span class="fas fa-star checked"></span>
                                 <span class="fas fa-star checked"></span>
                                 <span class="fas fa-star"></span>
-                                4.7 (1,500)
+                                4.7 (1,452)
                             </div>
                             <div style="text-align:right">
-                                <span class='small'>$100</span>
+                                <span class='small'>$110</span>
                                 ($10)
                             </div>
                         </div>
@@ -496,7 +535,7 @@
                 </div>
                 <div class="col col-lg-2">
                     <div class="card" style="width: 200px;">
-                        <img class="card-img-top" src="https://picsum.photos/200" alt="Card image cap">
+                        <img class="card-img-top" src="resources/automaya.png" alt="Card image cap">
                         <div class="card-body">
                             <h6 class="card-text">The complete react class</h6>
                             <p class="small text-capitalize">John Doe</p>
@@ -506,10 +545,10 @@
                                 <span class="fas fa-star checked"></span>
                                 <span class="fas fa-star checked"></span>
                                 <span class="fas fa-star"></span>
-                                4.7 (1,500)
+                                4.7 (1,452)
                             </div>
                             <div style="text-align:right">
-                                <span class='small'>$100</span>
+                                <span class='small'>$110</span>
                                 ($10)
                             </div>
                         </div>
@@ -517,7 +556,7 @@
                 </div>
                 <div class="col col-lg-2">
                     <div class="card" style="width: 200px;">
-                        <img class="card-img-top" src="https://picsum.photos/200" alt="Card image cap">
+                        <img class="card-img-top" src="resources/image1.png" alt="Card image cap">
                         <div class="card-body">
                             <h6 class="card-text">The complete react class</h6>
                             <p class="small text-capitalize">John Doe</p>
@@ -527,10 +566,10 @@
                                 <span class="fas fa-star checked"></span>
                                 <span class="fas fa-star checked"></span>
                                 <span class="fas fa-star"></span>
-                                4.7 (1,500)
+                                4.7 (1,452)
                             </div>
                             <div style="text-align:right">
-                                <span class='small'>$100</span>
+                                <span class='small'>$110</span>
                                 ($10)
                             </div>
                         </div>
@@ -538,7 +577,7 @@
                 </div>
                 <div class="col col-lg-2">
                     <div class="card" style="width: 200px;">
-                        <img class="card-img-top" src="https://picsum.photos/200" alt="Card image cap">
+                        <img class="card-img-top" src="resources/c_sharp.png" alt="Card image cap">
                         <div class="card-body">
                             <h6 class="card-text">The complete react class</h6>
                             <p class="small text-capitalize">John Doe</p>
@@ -548,10 +587,10 @@
                                 <span class="fas fa-star checked"></span>
                                 <span class="fas fa-star checked"></span>
                                 <span class="fas fa-star"></span>
-                                4.7 (1,500)
+                                4.7 (1,452)
                             </div>
                             <div style="text-align:right">
-                                <span class='small'>$100</span>
+                                <span class='small'>$110</span>
                                 ($10)
                             </div>
                         </div>
@@ -561,16 +600,18 @@
             </div>
         </div>
     </section>
+
+<!-- Footer -->
     <footer class="sticky-footer py-4 bg-dark text-white-50">
         <div class="row pr-3 pl-3 d-flex align-items-center">
             <div class="col-sm-4 col-lg-4">
-                <img src="https://picsum.photos/50/40" alt="footer_image">
+		    <h5 class=#><span id = "letter-t">T</span>utomalix</h5>
             </div>
             <div class="col-sm-4 col-lg-4">
                 <div class="text-center">
                     <small>Copyright &copy; <script>
                             document.write(new Date().getFullYear());
-                        </script> Udemy, Inc.</small>
+                        </script> Tutomalix, Inc.</small>
                 </div>
             </div>
             <div class="col-sm-4 col-lg-4 text-right">
