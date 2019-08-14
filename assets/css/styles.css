@@ -7,15 +7,6 @@ body {
   color: red;
 }
 
-.headimage {
-  background-image: url("../../resources/learning.jpg");
-  margin: 0px;
-  padding: 150px 0px 100px 15px;
-  background-size: cover;
-  width: 1500px;
-  height: 400px;
-}
-
 #letter-t{
   color: red;
 }
@@ -26,9 +17,10 @@ body {
   background-size: cover;
 }
 .carousel-item {
+  background-image: url("../../resources/learning.jpg");
   height: 65vh;
-  min-height: 350px;
-  background: no-repeat center center scroll;
+  min-height: 500px;
+  /* background: no-repeat center center scroll; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
