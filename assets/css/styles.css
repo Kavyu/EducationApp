@@ -19,6 +19,12 @@ body {
 #letter-t{
   color: red;
 }
+.top-image{
+  background-image: url("resources/learning.jpg");
+  margin: 0px;
+  padding: 150px 0px 100px 15px;
+  background-size: cover;
+}
 .carousel-item {
   height: 65vh;
   min-height: 350px;
