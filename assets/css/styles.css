@@ -16,6 +16,9 @@ body {
   height: 400px;
 }
 
+#letter-t{
+  color: red;
+}
 .carousel-item {
   height: 65vh;
   min-height: 350px;
